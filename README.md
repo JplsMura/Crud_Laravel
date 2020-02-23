@@ -1,80 +1,39 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+Para a clonagem e ultização deste repositório necessita-se de determinadas ferramentas para sua ultilização:
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+1° XAMPP: Para startar a aplicação o mesmo deve estar dentro da pasta HTDOCS do XAMPP, para que seje reconhecido pelo APACHE e rode localmente na sua máquina.
 
-## About Laravel
+2° MYSQL Workbench ou qualquer outra ferramenta de manipulação de arquivos SQL, pois precisara rodar as comando de estrutura e criação das tabelas ao qual o sistema necessita.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+3° Caso queria verificar/editar o código para teste recomendo a ultilização do Visual Studio Code, ou qualquer outro editor de texto e/ou IDE de sua preferência.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+PASSO - A - PASSO
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+1° Clone o repositório para a pasta do HTDOCS do XAMPP ao qual mencionei acima.
 
-## Learning Laravel
+2° Abra o arquivo .SQL no MYSQL WORKBENCH ou qualquer outra ferramente de manipulação de SQL.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+3° Rode os comando de criação do BANCO, e das tabelas na sequência que está sendo feito nos comentário do arquivo .sql e os execute.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+4° Abra a pasta crud_teste ao qual clonou em uma IDE ou editor de texto de sua preferência
 
-## Laravel Sponsors
+5° Expanda as pasta e vá até o arquivo .env do sistema, existem dois arquivos. O .env e o .env-example abra somente o .env e verifique no DB_CONNECTION MYSQL, o nome do banco bate com o qual foi cria no passo 3, e caso você use sua ferramenta com semha e username, passe esse parametrôs na DB_CONNECTION
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+EX:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
+DB_CONNECTION=mysql DB_HOST=127.0.0.1 DB_PORT=3306 DB_DATABASE=root DB_USERNAME=root DB_PASSWORD=root
 
-## Contributing
+Caso sua ferramenta de manipulação de SQL seje do tipo serve e com configuração de senha e username atribuidos na configuração procure todos os parametrôs de execução do mesmo
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Como: HOST, CONNECTION, USERNAME e PASSWORD para o acesso do mesmo
 
-## Code of Conduct
+6° Após a configuração e execução de todos os passo acima, vamos abrir o sistema no navegador, eu prefiro o Chrome mas abra em quaquer navegador de sua preferência, mas antes de tudo abra o XAMPP, e execute o APACHE e o MYSQL caso o seu MYSQL caso sua ferramenta de manipulção SQL seje do tipo server ao invés de cliente não necessita a execução do MYSQL no xamppp.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+7° Após a execução do APACHE e o MYSQL estiver ativos ao navegador, e digitamos a seguinte URL par teste:
 
-## Security Vulnerabilities
+LOCALHOST, caso abra a tela de Welcome do XAMPP sua configuração e instalação do mesmo esta correta e vamos proseguir...
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+digite a seguinte URL: http://localhost/crud_teste/public/usuarios
 
-## License
+Após a execução dessa URL a mesma ira abrir o sistema de CRUD ao qual foi clonado.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# crud_laravel
-# crud_laravel
+8° Usufrua e faça os teste do sistema.... :) !!!
