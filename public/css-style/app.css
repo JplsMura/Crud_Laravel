@@ -1,0 +1,17 @@
+@charset 'UTF-8';
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.campos {
+    width: 50%;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.botao_adicionar_campo {
+    text-align: center;
+}
